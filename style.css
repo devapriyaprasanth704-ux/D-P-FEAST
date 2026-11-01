@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff8f7;
+    color: #493238;
+}
+
+/* HEADER */
+
+.header {
+    background: #f8dce3;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    color: #a64d69;
+    letter-spacing: 3px;
+}
+
+.header p {
+    margin: 10px;
+    color: #805766;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6e394c;
+    margin: 0 18px;
+    font-weight: 500;
+}
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 130px 20px;
+    background:
+        radial-gradient(circle at 15% 20%, #f8dce3 0%, transparent 35%),
+        radial-gradient(circle at 85% 80%, #f5d5dc 0%, transparent 35%),
+        linear-gradient(135deg, #fff8f7, #fff0eb);
+}
+.subtitle {
+    letter-spacing: 4px;
+    color: #ad657e;
+    font-size: 13px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    color: #87465e;
+    margin: 20px;
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background: #ad657e;
+    color: white;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 30px;
+}
+
+/* MENU */
+
+.menu-section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.menu-section h2,
+.cart-section h2,
+.customer-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    color: #87465e;
+}
+
+.menu-section > p {
+    margin: 12px 0 35px;
+    color: #997582;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+/* FOOD CARDS */
+
+.food-card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px #a64d6915;
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px #a64d6930;
+}
+
+.food-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.food-card h3 {
+    margin: 15px 0 8px;
+    color: #704253;
+}
+
+.food-card p {
+    color: #ad657e;
+    font-weight: 600;
+}
+
+/* BUTTONS */
+
+button {
+    background: #ad657e;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    margin: 12px 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+button:hover,
+.hero-button:hover {
+    background: #87465e;
+}
+
+/* CART */
+
+.cart-section {
+    background: #fce9ed;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+#cart-items {
+    margin: 20px;
+}
+
+#cart-total {
+    color: #ad657e;
+}
+/* BEAUTIFUL CART DESIGN */
+
+.cart-item {
+    background: #fff0f5;
+    padding: 15px;
+    margin: 12px auto;
+    border-radius: 15px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(135, 70, 94, 0.10);
+}
+
+.cart-item button {
+    background: #ad657e;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #87465e;
+}
+
+.cart-item span {
+    font-weight: bold;
+    color: #87465e;
+}
+/* CUSTOMER DETAILS */
+
+.customer-section {
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.customer-section p {
+    margin: 12px 0 25px;
+    color: #997582;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 15px auto;
+    border: 1px solid #e7bdca;
+    border-radius: 12px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ad657e;
+}
+
+textarea {
+    height: 110px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #754657;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 8px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .food-card {
+        width: 90%;
+        max-width: 320px;
+    }
+}
+/* LUXURY SHOPPING CART */
+
+.cart-section {
+    background: linear-gradient(135deg, #fce9ed, #fff5f3);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+#cart-items {
+    max-width: 650px;
+    margin: 30px auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    background: white;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 18px #a64d6915;
+}
+
+.cart-item p {
+    color: #704253;
+    font-weight: 500;
+    margin-right: auto;
+}
+
+.cart-item span {
+    color: #87465e;
+    font-weight: 600;
+}
+
+.cart-item button {
+    padding: 8px 14px;
+    margin: 3px;
+}
+
+#cart-total {
+    font-size: 25px;
+    font-weight: 600;
+    color: #a64d69;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .cart-item {
+        justify-content: center;
+    }
+
+    .cart-item p {
+        width: 100%;
+        text-align: center;
+    }
+}
+/* LUXURY CHECKOUT SECTION */
+
+.customer-section {
+    background: #fff8f7;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.customer-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    color: #87465e;
+    margin-bottom: 15px;
+}
+
+.customer-section p {
+    color: #997582;
+    margin-bottom: 30px;
+}
+
+.customer-section input,
+.customer-section textarea {
+    width: 100%;
+    max-width: 450px;
+    padding: 16px;
+    margin: 15px auto;
+    border: 1px solid #e7bdca;
+    border-radius: 12px;
+    background: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.customer-section input:focus,
+.customer-section textarea:focus {
+    border-color: #ad657e;
+    box-shadow: 0 0 10px #ad657e25;
+}
+
+.customer-section button {
+    background: linear-gradient(135deg, #ad657e, #87465e);
+    padding: 15px 40px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px #a64d6925;
+}
+
+.customer-section button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px #a64d6940;
+}
+/* D & P FEAST LOGO */
+
+.logo {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #ad657e;
+    box-shadow: 0 5px 18px #a64d6930;
+    margin-bottom: 12px;
+}
+* LUXURY SHOPPING CART */
+
+.cart-section {
+    background: linear-gradient(135deg, #fff0f3, #fffaf8);
+    padding: 70px 20px;
+    border-radius: 25px;
+}
+
+.cart-item {
+    max-width: 650px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #f3d5dc;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(135, 70, 94, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.cart-item button {
+    background: #ad657e;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background: #87465e;
+}
+
+#cart-total {
+    font-size: 25px;
+    font-weight: bold;
+    color: #ad657e;
+}
+/* CART ACTION BUTTONS */
+
+.cart-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cart-actions a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.continue-btn {
+    background: #f3e4e7;
+    color: #9b6573;
+}
+
+.checkout-btn {
+    background: #a96f7e;
+    color: white;
+}
+
+.cart-actions a:hover {
+    transform: translateY(-3px);
+    opacity: 0.85;
+}
+/* D & P FEAST - BUTTER YELLOW LUXURY THEME */
+
+body {
+    background-color: #FFFCF2;
+    color: #51452F;
+}
+
+header {
+    background: #FFF5D6;
+}
+
+header h1,
+h2,
+h3 {
+    color: #8B6925;
+}
+
+nav a {
+    color: #72551D;
+}
+
+.hero-section {
+    background: #FFF8E5;
+}
+
+button,
+.explore-btn {
+    background: #D6A832;
+    color: white;
+    border: none;
+}
+
+button:hover,
+.explore-btn:hover {
+    background: #B88A20;
+}
+
+.menu-section {
+    background: #FFFCF2;
+}
+
+.food-card {
+    background: #FFF9E9;
+    border: 1px solid #F0DFAE;
+}
+
+.cart-section {
+    background: #FFF5D6;
+    box-shadow: 0 8px 30px rgba(150, 115, 40, 0.12);
+}
+
+.cart-item {
+    background: #FFFFFF;
+}
+
+#cart-total {
+    color: #A77B19;
+}
+
+.customer-section {
+    background: #FFFCF2;
+}
+
+input,
+textarea {
+    background: #FFFFFF;
+    border: 1px solid #E8D69F;
+}
+
+footer {
+    background: #8B6925;
+    color: white;
+}
+
+.continue-btn {
+    background: #F4E8C5;
+    color: #72551D;
+}
+
+.checkout-btn {
+    background: #D6A832;
+    color: white;
+}
